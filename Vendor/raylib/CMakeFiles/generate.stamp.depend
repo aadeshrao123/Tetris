@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.27/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Templates/CPackConfig.cmake.in
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/CompileDefinitions.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/GlfwImport.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/InstallConfigurations.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/JoinPaths.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/LibraryConfigurations.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/PackConfigurations.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/cmake/raylib-config-version.cmake
+C:/Users/aades/Downloads/New folder (35)/raylib/raylib.pc.in
+C:/Users/aades/Downloads/New folder (35)/raylib/src/CMakeLists.txt

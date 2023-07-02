@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aades\Downloads\New folder (35)\raylib\build\CMakeFiles\2b03491fd50feedb4cfefc2f8ea3d8ef\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\build\raylib\external\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9D4C6C6B-CFA6-3CEE-9A09-516F09CE210E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DD4759E4-A104-398C-8863-723C290C11CA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
