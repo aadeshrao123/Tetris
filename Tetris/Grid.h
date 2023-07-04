@@ -12,6 +12,7 @@ public:
 	void Initilaize();
 	void Print();
 	int GridSize[20][10];
+	bool IsCellOutside(int row, int column);
 	void Draw();
 
 private:
