@@ -55,16 +55,16 @@ void Game::HandleInput()
 void Game::MoveBlockLeft()
 {
 	CurrentBlock.Move(0, -1);
-	if (IsBlockOutside())
+	if (IsBlockOutside() || BlockFits() == false)
 	{
-		CurrentBlock.Move(0, 1);
+		CurrentBlock.Move(0 , 1);
 	}
 }
 
 void Game::MoveBlockRight()
 {
 	CurrentBlock.Move(0, 1);
-	if (IsBlockOutside())
+	if (IsBlockOutside() || BlockFits() == false)
 	{
 		CurrentBlock.Move(0, -1);
 	}
@@ -73,9 +73,10 @@ void Game::MoveBlockRight()
 void Game::MoveBlockDown()
 {
 	CurrentBlock.Move(1, 0);
-	if (IsBlockOutside())
+	if (IsBlockOutside() || BlockFits() == false)
 	{
 		CurrentBlock.Move(-1, 0);
+		LockBlock();
 	}
 }
 
@@ -99,4 +100,28 @@ void Game::RotateBlock()
 	{
 		CurrentBlock.UndoRotation();
 	}
+}
+
+void Game::LockBlock()
+{
+	std::vector<Position> tiles = CurrentBlock.GetCellPosition();
+	for (Position item : tiles)
+	{
+		grid.GridSize[item.row][item.column] = CurrentBlock.id;
+	}
+	CurrentBlock = NextBlock;
+	NextBlock = GetRandomBlock();
+}
+
+bool Game::BlockFits()
+{
+	std::vector<Position> tiles = CurrentBlock.GetCellPosition();
+	for (Position item : tiles)
+	{
+		if (grid.IsCellEmpty(item.row, item.column) == false)
+		{
+			return false;
+		}
+	}
+	return true;
 }

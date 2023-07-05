@@ -8,17 +8,20 @@ public:
 	Game();
 	Block GetRandomBlock();
 	std::vector<Block> GetAllBlocks();
+	Grid grid;
 	void Draw();
 	void HandleInput();
 	void MoveBlockLeft();
 	void MoveBlockRight();
 	void MoveBlockDown();
-	Grid grid;
 
 private:
-	bool IsBlockOutside();
 	std::vector<Block> blocks;
 	Block CurrentBlock;
 	Block NextBlock;
+
 	void RotateBlock();
+	bool IsBlockOutside();
+	void LockBlock();
+	bool BlockFits();
 };
