@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\aades\Downloads\New folder (35)\raylib\build\CMakeFiles\2b03491fd50feedb4cfefc2f8ea3d8ef\update_mappings.rule">
+    <CustomBuild Include="C:\Users\aades\Downloads\raylib-master\raylib-master\build\CMakeFiles\043b1a0961600a83b0610add39c93039\update_mappings.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aades\Downloads\raylib-master\raylib-master\src\external\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\src\mappings.h.in">
+    <None Include="C:\Users\aades\Downloads\raylib-master\raylib-master\src\external\glfw\src\mappings.h.in">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\src\external\glfw\CMake\GenerateMappings.cmake" />
-    <None Include="C:\Users\aades\Downloads\New folder (35)\raylib\build\raylib\external\glfw\src\CMakeFiles\update_mappings" />
+    <None Include="C:\Users\aades\Downloads\raylib-master\raylib-master\src\external\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\aades\Downloads\raylib-master\raylib-master\build\raylib\external\glfw\src\CMakeFiles\update_mappings" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{9D4C6C6B-CFA6-3CEE-9A09-516F09CE210E}</UniqueIdentifier>
+      <UniqueIdentifier>{BF14C5A3-8ADB-3EB2-8987-666F6E55049E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{DD4759E4-A104-398C-8863-723C290C11CA}</UniqueIdentifier>
+      <UniqueIdentifier>{BB238B61-00A1-3B7C-B6B0-C60AF66784AA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

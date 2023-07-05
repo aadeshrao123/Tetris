@@ -20,4 +20,5 @@ private:
 	std::vector<Block> blocks;
 	Block CurrentBlock;
 	Block NextBlock;
+	void RotateBlock();
 };

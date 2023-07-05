@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aades/Downloads/New folder (35)/raylib/src/external/glfw/src
+# Install script for directory: C:/Users/aades/Downloads/raylib-master/raylib-master/src/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

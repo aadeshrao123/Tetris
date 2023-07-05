@@ -6,14 +6,14 @@ C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cm
 C:/Program Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake
 C:/Program Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake
 C:/Program Files/CMake/share/cmake-3.27/Templates/CPackConfig.cmake.in
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/CompileDefinitions.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/GlfwImport.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/InstallConfigurations.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/JoinPaths.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/LibraryConfigurations.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/LibraryPathToLinkerFlags.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/PackConfigurations.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/PopulateConfigVariablesLocally.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/cmake/raylib-config-version.cmake
-C:/Users/aades/Downloads/New folder (35)/raylib/raylib.pc.in
-C:/Users/aades/Downloads/New folder (35)/raylib/src/CMakeLists.txt
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/CompileDefinitions.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/GlfwImport.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/InstallConfigurations.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/JoinPaths.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/LibraryConfigurations.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/PackConfigurations.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/cmake/raylib-config-version.cmake
+C:/Users/aades/Downloads/raylib-master/raylib-master/raylib.pc.in
+C:/Users/aades/Downloads/raylib-master/raylib-master/src/CMakeLists.txt

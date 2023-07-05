@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\aades\Downloads\New folder (35)\raylib\build\x64\Release\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\aades\Downloads\raylib-master\raylib-master\build\x64\Release\ZERO_CHECK</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

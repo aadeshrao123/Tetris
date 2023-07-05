@@ -314,8 +314,12 @@ RMAPI float Vector2DistanceSqr(Vector2 v1, Vector2 v2)
 // NOTE: Angle is calculated from origin point (0, 0)
 RMAPI float Vector2Angle(Vector2 v1, Vector2 v2)
 {
-    float result = atan2f(v2.y - v1.y, v2.x - v1.x);
-
+    float result = 0.0f;
+    
+    float dot = v1.x*v2.x + v1.y*v2.y;
+    float det = v1.x*v2.y - v1.y*v2.x;
+    result = -atan2f(det, dot);
+    
     return result;
 }
 
@@ -325,18 +329,8 @@ RMAPI float Vector2Angle(Vector2 v1, Vector2 v2)
 RMAPI float Vector2LineAngle(Vector2 start, Vector2 end)
 {
     float result = 0.0f;
-
-    float dot = start.x*end.x + start.y*end.y;      // Dot product
-
-    float dotClamp = (dot < -1.0f)? -1.0f : dot;    // Clamp
-    if (dotClamp > 1.0f) dotClamp = 1.0f;
-
-    result = acosf(dotClamp);
-
-    // Alternative implementation, more costly
-    //float v1Length = sqrtf((start.x*start.x) + (start.y*start.y));
-    //float v2Length = sqrtf((end.x*end.x) + (end.y*end.y));
-    //float result = -acosf((start.x*end.x + start.y*end.y)/(v1Length*v2Length));
+    
+    result = atan2f(end.y - start.y, end.x - start.x);
 
     return result;
 }

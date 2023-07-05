@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/aades/Downloads/New folder (35)/raylib/src/external/glfw
+# Install script for directory: C:/Users/aades/Downloads/raylib-master/raylib-master/src/external/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/aades/Downloads/New folder (35)/raylib/build/raylib/external/glfw/src/cmake_install.cmake")
+  include("C:/Users/aades/Downloads/raylib-master/raylib-master/build/raylib/external/glfw/src/cmake_install.cmake")
 endif()
 
