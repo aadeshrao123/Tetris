@@ -10,6 +10,7 @@ public:
 	std::vector<Block> GetAllBlocks();
 	Grid grid;
 	bool GameOver;
+	int Score = 0;
 
 	void Draw();
 	void HandleInput();
@@ -27,4 +28,5 @@ private:
 	void LockBlock();
 	bool BlockFits();
 	void Reset();
+	void UpdateScore(int linesCleared, int moveDownPoints);
 };
