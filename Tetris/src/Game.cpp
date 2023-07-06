@@ -5,7 +5,8 @@ Game::Game()
 	grid = Grid();
 	blocks = GetAllBlocks();
 	CurrentBlock = GetRandomBlock();
-	NextBlock = GetRandomBlock();
+	NextBlock = GetRandomBlock(); 
+	GameOver = false;
 }
 
 Block Game::GetRandomBlock()
@@ -34,7 +35,11 @@ void Game::Draw()
 void Game::HandleInput()
 {
 	int keyPressed = GetKeyPressed();
-
+	if (GameOver && keyPressed != 0)
+	{
+		GameOver = false;
+		Reset();
+	}
 	switch (keyPressed)
 	{
 	case KEY_LEFT:
@@ -54,29 +59,38 @@ void Game::HandleInput()
 
 void Game::MoveBlockLeft()
 {
-	CurrentBlock.Move(0, -1);
-	if (IsBlockOutside() || BlockFits() == false)
+	if (!GameOver)
 	{
-		CurrentBlock.Move(0 , 1);
+		CurrentBlock.Move(0, -1);
+		if (IsBlockOutside() || BlockFits() == false)
+		{
+			CurrentBlock.Move(0 , 1);
+		}
 	}
 }
 
 void Game::MoveBlockRight()
 {
-	CurrentBlock.Move(0, 1);
-	if (IsBlockOutside() || BlockFits() == false)
+	if (!GameOver)
 	{
-		CurrentBlock.Move(0, -1);
+		CurrentBlock.Move(0, 1);
+		if (IsBlockOutside() || BlockFits() == false)
+		{
+			CurrentBlock.Move(0, -1);
+		}
 	}
 }
 
 void Game::MoveBlockDown()
 {
-	CurrentBlock.Move(1, 0);
-	if (IsBlockOutside() || BlockFits() == false)
+	if (!GameOver)
 	{
-		CurrentBlock.Move(-1, 0);
-		LockBlock();
+		CurrentBlock.Move(1, 0);
+		if (IsBlockOutside() || BlockFits() == false)
+		{
+			CurrentBlock.Move(-1, 0);
+			LockBlock();
+		}
 	}
 }
 
@@ -95,10 +109,13 @@ bool Game::IsBlockOutside()
 
 void Game::RotateBlock()
 {
-	CurrentBlock.Rotate();
-	if (IsBlockOutside())
+	if (!GameOver)
 	{
-		CurrentBlock.UndoRotation();
+		CurrentBlock.Rotate();
+		if (IsBlockOutside())
+		{
+			CurrentBlock.UndoRotation();
+		}
 	}
 }
 
@@ -110,6 +127,10 @@ void Game::LockBlock()
 		grid.GridSize[item.row][item.column] = CurrentBlock.id;
 	}
 	CurrentBlock = NextBlock;
+	if (BlockFits() == false)
+	{
+		GameOver = true;
+	}
 	NextBlock = GetRandomBlock();
 	grid.ClearFullRows();
 }
@@ -125,4 +146,12 @@ bool Game::BlockFits()
 		}
 	}
 	return true;
+}
+
+void Game::Reset()
+{
+	grid.Initilaize();
+	blocks = GetAllBlocks();
+	CurrentBlock = GetRandomBlock();
+	NextBlock = GetRandomBlock();
 }

@@ -9,6 +9,8 @@ public:
 	Block GetRandomBlock();
 	std::vector<Block> GetAllBlocks();
 	Grid grid;
+	bool GameOver;
+
 	void Draw();
 	void HandleInput();
 	void MoveBlockLeft();
@@ -24,4 +26,5 @@ private:
 	bool IsBlockOutside();
 	void LockBlock();
 	bool BlockFits();
+	void Reset();
 };
