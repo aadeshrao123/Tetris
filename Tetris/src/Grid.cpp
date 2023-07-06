@@ -68,3 +68,50 @@ void Grid::Draw()
 		}
 	}
 }
+
+bool Grid::IsRowFull(int row)
+{
+	for (int column = 0; column < NumCols; column++)
+	{
+		if (GridSize[row][column] == 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+void Grid::ClearRow(int row)
+{
+	for (int column = 0; column < NumCols; column++)
+	{
+		GridSize[row][column] = 0;
+	}
+}
+
+void Grid::MoveRowDown(int row, int numRows)
+{
+	for (int column = 0; column < NumCols; column++)
+	{
+		GridSize[row + numRows][column] = GridSize[row][column];
+		GridSize[row][column] = 0;
+	}
+}
+
+int Grid::ClearFullRows()
+{
+	int completed = 0;
+	for (int row = NumRows - 1; row >= 0; row--)
+	{
+		if (IsRowFull(row))
+		{
+			ClearRow(row);
+			completed++;
+		}
+		else if (completed > 0)
+		{
+			MoveRowDown(row, completed);
+		}
+	}
+	return completed;
+}

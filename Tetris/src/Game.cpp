@@ -111,6 +111,7 @@ void Game::LockBlock()
 	}
 	CurrentBlock = NextBlock;
 	NextBlock = GetRandomBlock();
+	grid.ClearFullRows();
 }
 
 bool Game::BlockFits()
