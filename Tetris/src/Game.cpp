@@ -30,7 +30,18 @@ std::vector<Block> Game::GetAllBlocks()
 void Game::Draw()
 {
 	grid.Draw();
-	CurrentBlock.Draw();
+	CurrentBlock.Draw(11, 11);
+	switch (NextBlock.id)
+	{
+	case 3:
+		NextBlock.Draw(255, 290);
+		break;
+	case 4:
+		NextBlock.Draw(255, 280);
+		break;
+	default:
+		NextBlock.Draw(270, 270);
+	}
 }
 
 void Game::HandleInput()
