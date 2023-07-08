@@ -1,7 +1,6 @@
 #include <raylib.h>
 #include "Game.h"
 #include "Colors.h"
-#include <iostream>
 
 double LastUpdateTime = 0;
 
@@ -22,13 +21,16 @@ int main(void)
     InitWindow(570, 620, "Tetris");
     SetTargetFPS(60);
 
-    Font font = LoadFontEx("Tetris/Font/Lobster-Regular.ttf", 50, 0, 0);
+    Font font = LoadFontEx("Font/Lobster-Regular.ttf", 50, 0, 0);
 
     Game game = Game();
 
     while (WindowShouldClose() == false)
     {
         game.HandleInput();
+        UpdateMusicStream(game.music);
+        
+
         if (EventTriggered(0.2))
         {
             game.MoveBlockDown();
@@ -48,7 +50,6 @@ int main(void)
 
         char ScoreText[10];
         sprintf(ScoreText, "%d", game.Score);
-        std::cout << game.Score << std::endl;
         Vector2 textSize = MeasureTextEx(font, ScoreText, 38, 2);
 
 

@@ -40,10 +40,10 @@ bool Grid::IsCellOutside(int row, int column)
 {
 	if (row >= 0 && row < NumRows && column >= 0 && column < NumCols)
 	{
-		std::cout << "false" << std::endl;
+		//std::cout << "false" << std::endl;
 		return false;
 	}
-	std::cout << "true" << std::endl;
+	//std::cout << "true" << std::endl;
 
 	return true;
 }
